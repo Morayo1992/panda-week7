@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Pages with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Pages Assignment</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="greetBtn">Click Me for Greeting</button>
+    <p id="greetMessage"></p>
+
+    <input type="text" id="liveInput" placeholder="Type something...">
+    <p id="liveOutput"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Part 2: Interactive Elements</h2>
+
+    <!-- Light/Dark Mode -->
+    <button id="toggleModeBtn">Toggle Light/Dark Mode</button>
+
+    <!-- Counter Game -->
+    <div class="counter">
+      <p>Counter: <span id="counterValue">0</span></p>
+      <button id="increaseBtn">Increase</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div class="faq">
+      <h3 id="faqTitle">What is JavaScript? (Click to toggle)</h3>
+      <p id="faqAnswer" style="display:none;">
+        JavaScript is a programming language used to make web pages interactive.
+      </p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="signupForm">
+      <label>
+        Name:
+        <input type="text" id="nameField">
+      </label>
+      <small id="nameError" class="error"></small>
+      <br><br>
+
+      <label>
+        Email:
+        <input type="text" id="emailField">
+      </label>
+      <small id="emailError" class="error"></small>
+      <br><br>
+
+      <label>
+        Password:
+        <input type="password" id="passwordField">
+      </label>
+      <small id="passwordError" class="error"></small>
+      <br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formSuccess"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
